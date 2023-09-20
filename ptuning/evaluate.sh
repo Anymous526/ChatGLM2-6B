@@ -5,12 +5,12 @@ NUM_GPUS=1
 
 torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS main.py \
     --do_predict \
-    --validation_file AdvertiseGen/dev.json \
-    --test_file AdvertiseGen/dev.json \
+    --validation_file /mnt/workspace/THUDM/AdvertiseGen/dev.json \
+    --test_file /mnt/workspace/THUDMAdvertiseGen/dev.json \
     --overwrite_cache \
     --prompt_column content \
     --response_column summary \
-    --model_name_or_path THUDM/chatglm2-6b \
+    --model_name_or_path /mnt/workspace/THUDM/chatglm2-6b \
     --ptuning_checkpoint ./output/$CHECKPOINT/checkpoint-$STEP \
     --output_dir ./output/$CHECKPOINT \
     --overwrite_output_dir \
