@@ -6,7 +6,7 @@ NUM_GPUS=1
 torchrun --standalone --nnodes=1 --nproc-per-node=$NUM_GPUS main.py \
     --do_predict \
     --validation_file /mnt/workspace/THUDM/AdvertiseGen/dev.json \
-    --test_file /mnt/workspace/THUDMAdvertiseGen/dev.json \
+    --test_file /mnt/workspace/THUDM/AdvertiseGen/dev.json \
     --overwrite_cache \
     --prompt_column content \
     --response_column summary \
