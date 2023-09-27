@@ -7,7 +7,7 @@ deepspeed --num_gpus=1 --master_port $MASTER_PORT main.py \
     --deepspeed deepspeed.json \
     --do_train \
     --train_file /mnt/workspace/THUDM/AdvertiseGen/train.json \
-    --test_file/mnt/workspace/THUDM/AdvertiseGen/dev.json \
+    --test_file /mnt/workspace/THUDM/AdvertiseGen/dev.json \
     --prompt_column content \
     --response_column summary \
     --overwrite_cache \
