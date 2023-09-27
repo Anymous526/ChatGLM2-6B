@@ -15,6 +15,6 @@ def display_answer(model, query, history=[]):
 
 
 if __name__ == '__main__':
-    query = input("\n用户：")  # "类型#上衣\*材质#牛仔布\*颜色#白色\*风格#简约\*图案#刺绣\*衣样式#外套\*衣款式#破洞"
+    query = input("\n用户:")  # "类型#上衣\*材质#牛仔布\*颜色#白色\*风格#简约\*图案#刺绣\*衣样式#外套\*衣款式#破洞"
     answer = display_answer(model, query)
     print(answer)
