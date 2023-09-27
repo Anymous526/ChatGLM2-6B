@@ -1,6 +1,6 @@
 from transformers import AutoModel, AutoTokenizer
 
-model_path = "/mnt/workspace/THUDM/chatglm-6b"
+model_path = "/mnt/workspace/THUDM/chatglm2-6b"
 # 载入Tokenizer
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 # 微调前
