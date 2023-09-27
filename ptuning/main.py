@@ -26,7 +26,7 @@ import json
 import numpy as np
 from datasets import load_dataset
 import jieba 
-from rouge_chinese import Rouge
+from rouge-chinese import Rouge
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 import torch
 
