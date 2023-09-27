@@ -16,3 +16,5 @@ def display_answer(model, query, history=[]):
 if __name__ == '__main__':
   answer = display_answer(model, "类型#上衣\*材质#牛仔布\*颜色#白色\*风格#简约\*图案#刺绣\*衣样式#外套\*衣款式#破洞")
   print(answer)
+  answer = display_answer(model, "你好")
+  print(answer)
