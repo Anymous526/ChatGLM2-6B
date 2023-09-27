@@ -9,7 +9,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 config = AutoConfig.from_pretrained(model_path, trust_remote_code=True, pre_seq_len=128)
 model = AutoModel.from_pretrained(model_path, config=config, trust_remote_code=True)
 prefix_state_dict = torch.load(
-    os.path.join("/mnt/workspace/THUDM/ChatGLM2-6B/ptuning/output/adgen-chatglm2-6b-pt-128-2e-2/checkpoint-300", "pytorch_model.bin"))
+    os.path.join("/mnt/workspace/THUDM/ChatGLM2-6B/ptuning/output/adgen-chatglm2-6b-pt-128-2e-2/checkpoint-3000", "pytorch_model.bin"))
 
 new_prefix_state_dict = {}
 
